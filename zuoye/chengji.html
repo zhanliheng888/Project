@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> 
+  <script src="jquery-3.3.1.js"></script>
+</head>
+
+  <script type="text/javascript">
+    $(function(){
+  	
+  	$("#kecheng").click(function(){
+  		 $("#kongbai").load("kecheng.html");
+  	});
+  	
+  	$("#chengji").click(function(){
+  		$("#kongbai").load("chengji.html");
+  	});
+  	
+  		$("#denglu").click(function(){
+  		$("#kongbai").load("denglu.html");
+  	});
+
+  });
+  </script>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top w-100 text-left bg-primary" style="background-image: url('C:/Users/Administrator/Desktop/Pingendo/720720393849738260.png'); background-position:left top; background-repeat: no-repeat; height: 90px;">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <div class="btn-group">
+          <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown"> 教学管理</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">课程浏览</a>
+            <a class="dropdown-item" href="#" id="kecheng">课程添加</a>
+            <hr>
+            <a class="dropdown-item" href="#">教师浏览</a>
+            <a class="dropdown-item" href="#">教师添加</a>
+            <hr>
+            <a class="dropdown-item" href="#">班级信息</a>
+            <a class="dropdown-item" href="#">添加班级</a>
+            <hr>
+            <a class="dropdown-item" href="#">学生信息</a>
+            <a class="dropdown-item" href="#">添加学生</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> 考试管理</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">题库管理</a>
+            <a class="dropdown-item" href="#">在线考试</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown"> 成绩统计</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" id="chengji">成绩汇总</a>
+            <a class="dropdown-item" href="#">成绩核算</a>
+            <a class="dropdown-item" href="#">成绩分析</a>
+          </div>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+      </div>
+    </div>
+    <a class="btn navbar-btn ml-2 text-white btn-secondary" id="denglu">
+      <i class="fa d-inline fa-lg fa-chevron-up"></i>登录</a>
+  </nav>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <table class="table table-bordered table-hover ">
+            <thead>
+              <tr class="table-secondary ">
+                <th>序号</th>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>专业</th>
+                <th>课程</th>
+                <th>成绩</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>1</td>
+                <td>李四</td>
+                <td>201540704432</td>
+                <td>软件外包</td>
+                <td>数据结构</td>
+                <td class="table-warning">71</td>
+                <td>良好</td>
+              </tr>
+              <tr>
+                <td class="table-info">2</td>
+                <td class="table-info">张三</td>
+                <td class="table-info">201540704214</td>
+                <td class="table-info">软件外包</td>
+                <td class="table-info">数据结构</td>
+                <td class="table-secondary">98</td>
+                <td class="table-info">优秀</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>李五</td>
+                <td>201540704971</td>
+                <td>软件外包</td>
+                <td class="">数据结构</td>
+                <td class="table-danger">55</td>
+                <td>不及格</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pagination justify-content-center text-light a11">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span>«</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span> 1</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span>»</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>

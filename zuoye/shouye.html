@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="theme.css" type="text/css"></head>>
+  
+   <script src="jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(function(){
+  	
+  	$("#kecheng").click(function(){
+  		 $("#kongbai").load("kecheng.html");
+  	});
+  	
+  	$("#chengji").click(function(){
+  		$("#kongbai").load("chengji.html");
+  	});
+  	
+  		$("#denglu").click(function(){
+  		$("#kongbai").load("denglu.html");
+  	});
+
+  });
+  </script>
+
+
+<body class="border">
+  <div id="kongbai"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>201540704768战利恒
+  <br>
+  <br>
+  <br>
+  <br>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top w-100 text-left bg-primary" style="background-image: url(&quot;720720393849738260.png&quot;); background-position: left top; background-repeat: no-repeat; height: 90px;">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <div class="btn-group">
+          <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown"> 教学管理</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">课程浏览</a>
+            <a class="dropdown-item" href="#" id="kecheng">课程添加</a>
+            <hr>
+            <a class="dropdown-item" href="#">教师浏览</a>
+            <a class="dropdown-item" href="#">教师添加</a>
+            <hr>
+            <a class="dropdown-item" href="#">班级信息</a>
+            <a class="dropdown-item" href="#">添加班级</a>
+            <a class="dropdown-item" href="#">学生信息</a>
+            <a class="dropdown-item" href="#">添加学生</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown"> 考试管理</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">题库管理</a>
+            <hr>
+            <a class="dropdown-item" href="#">在线考试</a>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button class="btn dropdown-toggle btn-primary" data-toggle="dropdown"> 成绩统计</button>
+          <div class="dropdown-menu">
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" id="chengji">成绩汇总</a>
+            <hr>
+            <a class="dropdown-item" href="#">成绩核算</a>
+            <a class="dropdown-item" href="#">成绩分析</a>
+          </div>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text">
+          <button class="btn my-2 my-sm-0 btn-outline-secondary" type="submit">
+            <i class="fa fa-fw fa-circle-thin"></i>搜索</button>
+        </form>
+      </div>
+    </div>
+    <a class="btn navbar-btn ml-2 btn-secondary" id="denglu">
+      <i class="fa d-inline fa-lg fa-female"></i>登录</a>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="py-5 text-white bg-primary" style="height:270px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <p class="lead">Sign up to our newsletter for the latest news</p>
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your e-mail here"> </div>
+            <button type="submit" class="btn btn-primary ml-3">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-fw fa-3x text-white fa-qq"></i>
+          </a>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa fa-fw fa-3x text-white fa-weibo"></i>
+          </a>
+        </div>
+        <div class="col-4 col-md-1 align-self-center">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-fw text-white fa-3x fa-android"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3 text-center">
+          <p>© Copyright 2018 版权归青岛大学所有！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
