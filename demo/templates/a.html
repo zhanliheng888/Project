@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> </head>
+</head>
+
+<body>
+<div class="container">
+<table class="table table-bordered table-hover table-striped">
+<tr class="nav-item" >
+<a class="nav-link" href=" " style="font-size:40px; color:black; font-weight:normal;">
+<i class="fa d-inline fa-lg fa-calendar"></i> 成绩列表</a></tr>
+<thead>
+<tr style=" font-size:30px; background-color:black; font-family:宋体; color: blanchedalmond;" >
+            <th>序号</th>
+            <th>学号</th>
+            <th>所学专业</th>
+            <th>姓名</th>
+            <th>课程名称</th>
+            <th>成绩</th>
+            <th>说明</th>
+</tr>
+</thead>
+<tbody>
+{section name=s loop=$data}
+<tr {if $smarty.section.s.rownum<=3} class="text-danger"{/if}>
+            <td >{$smarty.section.s.rownum}</td>
+            <td >{$data[s].stu_rollno}</td>
+            <td >{$data[s]["stu_name"]}
+            {if $smarty.section.s.rownum==1}
+            <i class ="fa fa-fw fa-star"></i>
+            <i class ="fa fa-fw fa-star"></i>
+            <i class ="fa fa-fw fa-star"></i>
+            {elseif $smarty.section.s.rownum==2}
+            <i class ="fa fa-fw fa-star"></i>
+            <i class ="fa fa-fw fa-star"></i>
+            {elseif $smarty.section.s.rownum==3}
+            <i class ="fa fa-fw fa-star"></i>
+            {/if}
+        </td>
+            <td >{$data[s]["stu_major"]}</td>
+            <td >{$data[s]["stu_course_name"]}</td>
+            <td class="{if $data[s].stu_score>=80}
+                    table-success
+                    {elseif $data[s].stu_score>=60}
+                    table-warning
+                    {else}
+                    table-danger
+                    {/if}">
+                    {$data[s]["stu_score"]}</td>
+            <td >{$data[s]["stu_mark_desc"]}</td>
+{sectionelse} 
+没有信息
+</tr>
+{/section} 
+</tbody>
+</table>
+</div> 
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+</body>
+
+</html>
