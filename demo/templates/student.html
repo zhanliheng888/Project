@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-1 col-md-10">
+
+                    <h1>{#sysname#} - 学生列表</h1>
+
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>学号</th>
+                                <th>姓名</th>
+                                <th>专业</th>
+                                <th>班级</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {section name=s loop=$students}
+                            <tr>
+                                <td>{$smarty.section.s.rownum}</td>
+                                <td><a href=" ">{$students[s].stu_rollno}</a></td>
+                                <td><a href="student.php?stu_id={$students[s].stu_id}">{$students[s].stu_name}</a></td>
+                                <td>{$students[s].stu_major_name}</td>
+                                <td>{$students[s].stu_class_name}</td>
+                            </tr>
+                            {sectionelse}
+                                <tr>
+                                    <td colspan-"4">没有学生数据</td>
+                                </tr>   
+                            {/section}
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
